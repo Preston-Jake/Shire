@@ -13,18 +13,55 @@ body {
 /* Components */
 
 .input-green{
-  color: #ffffff;
+  color: #00FF8B;
   background: rgba(0, 0, 0, 0);
   border: 1px solid #00FF8B;
   border-radius: 24px;
   box-shadow: 0px 4px 4px #00FF8B;
+  text-shadow: 0px 4px 4px #00FF8B;
   width: 240px;
   height: 40px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  padding: 8px
+  padding: 8px;
+}
+.input-green::placeholder{
+  color: #00FF8B;
 }
 
+.btn-hz-green{
+  color: #00FF8B;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #00FF8B;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px #00FF8B;
+  text-shadow: 0px 4px 4px #00FF8B;
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-hz-orange{
+  color: #FFC164;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #FFC164;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px #FFC164;
+  text-shadow: 0px 4px 4px #FFC164;
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-hz-green:active{
+  background: #00FF8B;
+  color:#ffffff;
+  box-shadow: 0px 0px 4px #00FF8B;
+}
 /* landing */
 
 .landing-wrapper{
@@ -56,5 +93,6 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
+  font-family: 'Open Sans', sans-serif;
 }
 
