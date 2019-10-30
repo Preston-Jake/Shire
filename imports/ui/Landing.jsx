@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 const Landing = () => {
     return (
         <div className="landing-wrapper">
@@ -8,6 +10,7 @@ const Landing = () => {
                 <span className="landing-span">Awareness In Your Hands</span>
             </div>
             <div className="landing-body">
+
             </div>
         </div>
     )
