@@ -1,6 +1,5 @@
 import React from 'react';
-import Login from './Login';
-import RegisterBtn from './RegisterBtn';
+
 
 const Landing = () => {
     return (
@@ -11,8 +10,7 @@ const Landing = () => {
                 <span className="landing-span">Awareness In Your Hands</span>
             </div>
             <div className="landing-body">
-                <Login />
-                <RegisterBtn />
+
             </div>
         </div>
     )
