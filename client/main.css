@@ -33,8 +33,6 @@ body {
   background: rgba(0, 0, 0, 0);
   border: 1px solid #FFC164;
   border-radius: 24px;
-  /* box-shadow: 0px 4px 4px #FFC164; */
-  /* text-shadow: 0px 4px 4px #FFC164; */
   width: 240px;
   height: 40px;
   font-family: 'Open Sans', sans-serif;
@@ -50,8 +48,6 @@ body {
   background: rgba(0, 0, 0, 0);
   border: 1px solid #00FF8B;
   border-radius: 24px;
-  /* box-shadow: 0px 4px 4px #00FF8B; */
-  /* text-shadow: 0px 4px 4px #00FF8B; */
   width: 240px;
   height: 40px;
   font-size: 16px;
@@ -64,8 +60,6 @@ body {
   background: rgba(0, 0, 0, 0);
   border: 1px solid #FFC164;
   border-radius: 24px;
-  /* box-shadow: 0px 4px 4px #FFC164; */
-  /* text-shadow: 0px 4px 4px #FFC164; */
   width: 240px;
   height: 40px;
   font-size: 16px;
@@ -106,6 +100,7 @@ body {
   line-height: 16px;
   font-family: 'Open Sans', sans-serif;
 }
+
 /* landing */
 
 .landing-wrapper{
@@ -119,12 +114,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
   margin-bottom: 24px;
 }
 
 .landing-logo{
-  background: #00FF8B;
   height: 64px;
   width: 64px;
 }
@@ -148,86 +141,101 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.login-wrapper{
-  
-}
-
-.login-form{
+.emissions-header{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 64px;
+  justify-content: space-between;
 }
-
-.login-inputs{
-  width: 240px;
-  height: 96px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-#login-email{
-  margin-bottom: 16px;
-}
-
-/* Register */
-
-.register-wrapper{
-  margin: 16px;
-}
-
-.register-title{
-  color: #ffffff;
+.emissions-title{
+  display: inline-block;
   font-family: 'Exo', sans-serif;
-  font-size: 40px;
-  line-height: 32px;
-  margin: 0px;
+  font-size: 48px;
+  line-height: 48px;
   letter-spacing: 0.1em;
+  color: #fff;
+  margin-left: 16px; 
+  margin-bottom: 0px;
+  margin-top: 32px;
+}
+.emissions-logo{
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-right: 8px;
 }
 
-.register-subtitle{
-  color: #00FF8B;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
-  margin: 8px;
+.emissions-subtitle{
+  font-family: 'Exo', sans-serif;
+  color: #ffffff; 
+  font-size: 32px;
+  margin-left: 32px;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
-.register-p{
-  display: block;
+.emissions-nar{
+  font-family: 'Exo', sans-serif;
   color: #ffffff;
-  font-weight: 100;
   font-size: 16px;
-  line-height: 32px;
-  font-family: 'Open Sans', sans-serif;
+  margin-left: 32px;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left:16px;
-}
-.register-form{
-  margin-left: 24px;
-}
-.register-input{
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-}
-.register-btns{
-  margin-top: 24px;
-}
-
-#register-btn-back{
   margin-right: 64px;
+  font-weight: 300;
+  line-height: 24px;
+
+}
+.emissions-field{
+  border: 0px;
+  margin: 0px;
+  padding: 0px 32px;
+  display: flex;
 }
 
-.register-error{
-  color: #FFC164;
+.home-input{
+  margin-top: 32px;
+}
+
+.emissions-field h3{
   font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.2em;
+  color: #FFC164
 }
 
+.vehicle-btn-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
 
+.vehicle-field{
+border: #FFC164 1px solid;
+border-radius: 24px;
+margin-top: 16px;
+width: 280px;
+}
+.vehicle-label{
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 8px;
+  margin: 0px;
+}
+
+.waste-info{
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 0px;
+}
+.checkbox-label{
+
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
