@@ -4,6 +4,8 @@ import { Emissions } from '../api/emissions'
 
 
 const Shire = (props) => {
+
+    console.log(props)
     const HomeEmissions = () => { }
     const VehicleEmissions = () => { }
     const WasteEmissions = () => { }
