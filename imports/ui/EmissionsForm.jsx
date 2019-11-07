@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Meteor } from 'meteor/meteor';
+import { useLocation } from 'react-router-dom';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Emissions } from '../api/emissions'
 
 const EmissionsForm = () => {
+
     const handleSubmit = (e) => {
         e.preventDefault();
         Emissions.insert({
@@ -17,7 +18,15 @@ const EmissionsForm = () => {
             Aluminium,
             Glass,
             Newspaper,
-            Magazine
+            Magazine,
+        }, function (err, id) {
+            if (err) {
+                return err
+            }
+            if (id) {
+                sessionStorage.setItem('emissionsId', id)
+                location = '/shire'
+            }
         })
     }
 
@@ -70,8 +79,8 @@ const EmissionsForm = () => {
                     <fieldset className="emissions-field" name="vehicles">
                         <h3>Vehicle</h3>
                         <div className="vehicle-btn-wrapper">
-                            <button className="btn-lg-green" onClick={(e) => addVehicle(e)}>Add Vehicle</button>
-                            {Vehicles.length > 0 && <button className="btn-lg-orange" onClick={(e) => { removeVehicle(e) }}>Remove</button>}
+                            <button className="btn-hz-green" onClick={(e) => addVehicle(e)}>ADD VEHICLE</button>
+                            {Vehicles.length > 0 && <button className="btn-lg-orange" onClick={(e) => { removeVehicle(e) }}>REMOVE</button>}
                         </div>
 
                         {Vehicles.map((val, idx) => {
@@ -86,7 +95,7 @@ const EmissionsForm = () => {
                     </fieldset>
                     <fieldset className="emissions-field" name="waste">
                         <h3>Waste</h3>
-                        <p className="waste-info">Check off your recycle</p>
+                        <p className="waste-info">Check off your recycling*</p>
                         <label className="checkbox-label">
                             <input type="checkbox" checked={Plastic} onChange={() => { setPlastic(!Plastic) }} />
                             <span className="checkbox-title">Plastic</span>
@@ -105,10 +114,10 @@ const EmissionsForm = () => {
                         </label>
                         <label className="checkbox-label">
                             <input type="checkbox" checked={Magazine} onChange={() => { setMagazine(!Magazine) }} />
-                            <span className="checkbox-title" s>Magazine</span>
+                            <span className="checkbox-title">Magazine</span>
                         </label>
                     </fieldset>
-                    <button className="btn-hz-green" onClick={handleSubmit}>SUBMIT</button>
+                    <button className="btn-hz-green" onClick={handleSubmit}>Shire</button>
                 </form>
             </div>
         </div>

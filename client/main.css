@@ -227,14 +227,22 @@ width: 280px;
 }
 
 .waste-info{
-  color: #fff;
+  color: #FFC164;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 16px;
   margin-top: 0px;
 }
 .checkbox-label{
+  margin-bottom: 16px;
+}
 
+.checkbox-title{
+  color: #FFC164;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 8px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

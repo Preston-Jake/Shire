@@ -15,7 +15,8 @@
     "react-dom": "^16.5.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "reusable": "^1.0.0-alpha.12"
   },
   "meteor": {
     "mainModule": {
