@@ -37,6 +37,16 @@ const EmissionsForm = () => {
     const [FuelOil, setFuelOil] = useState(0);
 
     const [Vehicles, setVehicles] = useState([]);
+    const handleVehicleMPG = (e, idx) => {
+        let vehicle = [...Vehicles][idx]
+        vehicle.mpg = parseInt(e.target.value);
+        [...Vehicles].splice(idx, 0, vehicle)
+    }
+    const handleVehicleMPW = (e, idx) => {
+        let vehicle = [...Vehicles][idx]
+        vehicle.mpw = parseInt(e.target.value);
+        [...Vehicles].splice(idx, 0, vehicle)
+    }
 
     const [Plastic, setPlastic] = useState(false);
     const [Aluminium, setAluminium] = useState(false);
@@ -70,28 +80,29 @@ const EmissionsForm = () => {
                 <form className="emissions-form">
                     <fieldset className="emissions-field" name="home">
                         <h3>Home</h3>
-                        <input className="input-orange home-input" type="number" placeholder="Household size" required={true} onChange={(e) => setHouseholdSize(e.target.value)} />
-                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Electric" required={true} onChange={(e) => setElectric(e.target.value)} />
-                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Natural Gas" required={true} onChange={(e) => setNaturalGas(e.target.value)} />
-                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Propane" required={true} onChange={(e) => setPropane(e.target.value)} />
-                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Fuel Oil" required={true} onChange={(e) => setFuelOil(e.target.value)} />
+                        <input className="input-orange home-input" type="number" placeholder="Household size" required={true} onChange={(e) => setHouseholdSize(parseInt(e.target.value))} />
+                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Electric" required={true} onChange={(e) => setElectric(parseInt(e.target.value))} />
+                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Natural Gas" required={true} onChange={(e) => setNaturalGas(parseInt(e.target.value))} />
+                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Propane" required={true} onChange={(e) => setPropane(parseInt(e.target.value))} />
+                        <input className="input-orange home-input" type="number" placeholder="Avg. $/Monthly: Fuel Oil" required={true} onChange={(e) => setFuelOil(parseInt(e.target.value))} />
                     </fieldset>
                     <fieldset className="emissions-field" name="vehicles">
                         <h3>Vehicle</h3>
                         <div className="vehicle-btn-wrapper">
                             <button className="btn-hz-green" onClick={(e) => addVehicle(e)}>ADD VEHICLE</button>
-                            {Vehicles.length > 0 && <button className="btn-lg-orange" onClick={(e) => { removeVehicle(e) }}>REMOVE</button>}
+
                         </div>
 
                         {Vehicles.map((val, idx) => {
                             return (
                                 <fieldset className="vehicle-field" key={idx}>
                                     <p className="vehicle-label">{`Vehicle ${idx + 1}`}</p>
-                                    <input className="input-orange" type="number" name="mpg" placeholder="avg. Miles Per Gallon" />
-                                    <input className="input-orange" type="number" name="mpw" placeholder="avg. Miles Per Week" />
+                                    <input className="input-orange" type="number" name="mpg" placeholder="avg. Miles Per Gallon" onChange={(e) => handleVehicleMPG(e, idx)} />
+                                    <input className="input-orange" type="number" name="mpw" placeholder="avg. Miles Per Week" onChange={(e) => handleVehicleMPW(e, idx)} />
                                 </fieldset>
                             )
                         })}
+                        {Vehicles.length > 0 && <button className="btn-hz-orange" onClick={(e) => { removeVehicle(e) }}>REMOVE</button>}
                     </fieldset>
                     <fieldset className="emissions-field" name="waste">
                         <h3>Waste</h3>
