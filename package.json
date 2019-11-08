@@ -16,7 +16,8 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-spring": "^8.0.27",
-    "reusable": "^1.0.0-alpha.12"
+    "reusable": "^1.0.0-alpha.12",
+    "victory": "^33.1.2"
   },
   "meteor": {
     "mainModule": {

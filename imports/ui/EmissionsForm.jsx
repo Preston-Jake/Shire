@@ -90,7 +90,7 @@ const EmissionsForm = () => {
                         <h3>Vehicle</h3>
                         <div className="vehicle-btn-wrapper">
                             <button className="btn-hz-green" onClick={(e) => addVehicle(e)}>ADD VEHICLE</button>
-                            {Vehicles.length > 0 && <button className="btn-lg-orange" onClick={(e) => { removeVehicle(e) }}>REMOVE</button>}
+
                         </div>
 
                         {Vehicles.map((val, idx) => {
@@ -102,6 +102,7 @@ const EmissionsForm = () => {
                                 </fieldset>
                             )
                         })}
+                        {Vehicles.length > 0 && <button className="btn-hz-orange" onClick={(e) => { removeVehicle(e) }}>REMOVE</button>}
                     </fieldset>
                     <fieldset className="emissions-field" name="waste">
                         <h3>Waste</h3>

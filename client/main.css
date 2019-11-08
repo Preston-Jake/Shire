@@ -245,9 +245,61 @@ width: 280px;
   margin-left: 8px;
 }
 
-.shire-emissions{
-  color: #fff;
+.shire-emissions-orange{
+  color: #FFC164;
+  font-family: 'Exo', sans-serif;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
+
+.shire-emissions-green{
+  color: #FFC164;
+  font-family: 'Exo', sans-serif;
+  font-size: 56px;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.shire-result{
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 8px;
+  margin-bottom:0px;
+  padding: 0px 16px;
+}
+
+
+.shire-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.shire-graph-wrapper{
+  width: 336px;
+  height: 336px;
+}
+
+.shire-span{
+  color: #FFC164;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+.shire-info{
+  color: #FFC164;
+  width: 336px;
+  margin: 8px;
+  font-size: 24px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
