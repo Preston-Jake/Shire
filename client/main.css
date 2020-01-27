@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Exo|Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Exo|Open+Sans&display=swap");
 /* font-family: 'Exo', sans-serif;
 font-family: 'Open Sans', sans-serif; */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -11,71 +11,71 @@ body {
 
 /* Components */
 
-.input-green{
-  color: #00FF8B;
+.input-green {
+  color: #00ff8b;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #00FF8B;
+  border: 1px solid #00ff8b;
   border-radius: 24px;
   /* box-shadow: 0px 4px 4px #00FF8B; */
   /* text-shadow: 0px 4px 4px #00FF8B; */
   width: 240px;
   height: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   padding: 8px;
 }
-.input-green::placeholder{
-  color: #00FF8B;
+.input-green::placeholder {
+  color: #00ff8b;
 }
 
-.input-orange{
-  color: #FFC164;
+.input-orange {
+  color: #ffc164;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #FFC164;
+  border: 1px solid #ffc164;
   border-radius: 24px;
   width: 240px;
   height: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   padding: 8px;
 }
-.input-orange::placeholder{
-  color: #FFC164;
+.input-orange::placeholder {
+  color: #ffc164;
 }
 
-.btn-hz-green{
-  color: #00FF8B;
+.btn-hz-green {
+  color: #00ff8b;
   background: rgba(0, 0, 0, 0);
-  border: 1px solid #00FF8B;
-  border-radius: 24px;
-  width: 240px;
-  height: 40px;
-  font-size: 16px;
-  padding: 8px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.btn-hz-orange{
-  color: #FFC164;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid #FFC164;
+  border: 1px solid #00ff8b;
   border-radius: 24px;
   width: 240px;
   height: 40px;
   font-size: 16px;
   padding: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.btn-hz-green:active{
-  background: #00FF8B;
-  color:#ffffff;
-  box-shadow: 0px 0px 4px #00FF8B;
+.btn-hz-orange {
+  color: #ffc164;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ffc164;
+  border-radius: 24px;
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.btn-lg-orange{
-  color: #FFC164;
-  border: 1px solid #FFC164;
+.btn-hz-green:active {
+  background: #00ff8b;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px #00ff8b;
+}
+
+.btn-lg-orange {
+  color: #ffc164;
+  border: 1px solid #ffc164;
   background: rgba(0, 0, 0, 0);
   border-radius: 24px;
   /* box-shadow: 0px 4px 4px #FFC164;
@@ -84,12 +84,12 @@ body {
   height: 40px;
   font-size: 12px;
   line-height: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.btn-lg-green{
-  color: #00FF8B;
-  border: 1px solid #00FF8B;
+.btn-lg-green {
+  color: #00ff8b;
+  border: 1px solid #00ff8b;
   background: rgba(0, 0, 0, 0);
   border-radius: 24px;
   /* box-shadow: 0px 4px 4px #00FF8B;
@@ -98,65 +98,66 @@ body {
   height: 40px;
   font-size: 12px;
   line-height: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* landing */
 
-.landing-wrapper{
+.landing-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
 }
-.landing-header{
-  color: #ffffff; 
+.landing-header {
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
 }
 
-.landing-logo{
+.landing-logo {
   height: 64px;
   width: 64px;
 }
 
-.landing-title{ 
-  font-family: 'Exo', sans-serif;
+.landing-title {
+  font-family: "Exo", sans-serif;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.1em;
 }
 
-.landing-span{
+.landing-span {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.landing-body{
+.landing-body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.emissions-header{
+
+.emissions-header {
   display: flex;
   justify-content: space-between;
 }
-.emissions-title{
+.emissions-title {
   display: inline-block;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.1em;
   color: #fff;
-  margin-left: 16px; 
+  margin-left: 16px;
   margin-bottom: 0px;
   margin-top: 32px;
 }
-.emissions-logo{
+.emissions-logo {
   transform: matrix(-1, 0, 0, -1, 0, 0);
   height: 64px;
   width: 64px;
@@ -166,17 +167,17 @@ body {
   margin-right: 8px;
 }
 
-.emissions-subtitle{
-  font-family: 'Exo', sans-serif;
-  color: #ffffff; 
+.emissions-subtitle {
+  font-family: "Exo", sans-serif;
+  color: #ffffff;
   font-size: 32px;
   margin-left: 32px;
   margin-top: 8px;
   margin-bottom: 0px;
 }
 
-.emissions-nar{
-  font-family: 'Exo', sans-serif;
+.emissions-nar {
+  font-family: "Exo", sans-serif;
   color: #ffffff;
   font-size: 16px;
   margin-left: 32px;
@@ -185,69 +186,78 @@ body {
   margin-right: 64px;
   font-weight: 300;
   line-height: 24px;
-
 }
-.emissions-field{
+
+.emissions-body{
+  display: flex;
+ justify-content: flex-start;
+}
+
+.emissions-field {
   border: 0px;
   margin: 0px;
   padding: 0px 32px;
   display: flex;
 }
 
-.home-input{
+#emissions-submit{
+  margin: 0px 32px;
+}
+
+.home-input {
   margin-top: 32px;
 }
 
-.emissions-field h3{
-  font-family: 'Open Sans', sans-serif;
+.emissions-field h3 {
+  font-family: "Open Sans", sans-serif;
   font-size: 32px;
   line-height: 32px;
   letter-spacing: 0.2em;
-  color: #FFC164
+  color: #ffc164;
 }
 
-.vehicle-btn-wrapper{
+.vehicle-btn-wrapper {
   display: flex;
   justify-content: space-around;
 }
 
-.vehicle-field{
-border: #FFC164 1px solid;
-border-radius: 24px;
-margin-top: 16px;
-width: 280px;
+.vehicle-field {
+  border: #ffc164 1px solid;
+  border-radius: 24px;
+  margin-top: 16px;
+  width: 280px;
 }
-.vehicle-label{
+.vehicle-label {
   color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   line-height: 32px;
   padding: 8px;
   margin: 0px;
 }
 
-.waste-info{
-  color: #FFC164;
-  font-family: 'Open Sans', sans-serif;
+.waste-info {
+  color: #ffc164;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 16px;
   margin-top: 0px;
 }
-.checkbox-label{
+.checkbox-label {
   margin-bottom: 16px;
 }
 
-.checkbox-title{
-  color: #FFC164;
-  font-family: 'Open Sans', sans-serif;
+.checkbox-title {
+  color: #ffc164;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 16px;
   margin-left: 8px;
 }
 
-.shire-emissions-orange{
-  color: #FFC164;
-  font-family: 'Exo', sans-serif;
+.shire-emissions-orange {
+  color: #ffc164;
+  font-family: "Exo", sans-serif;
   font-size: 56px;
   line-height: 56px;
   text-align: center;
@@ -255,9 +265,9 @@ width: 280px;
   margin-bottom: 8px;
 }
 
-.shire-emissions-green{
-  color: #FFC164;
-  font-family: 'Exo', sans-serif;
+.shire-emissions-green {
+  color: #ffc164;
+  font-family: "Exo", sans-serif;
   font-size: 56px;
   line-height: 56px;
   text-align: center;
@@ -265,36 +275,40 @@ width: 280px;
   margin-bottom: 8px;
 }
 
-.shire-result{
+.shire-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shire-result {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   margin-top: 8px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   padding: 0px 16px;
 }
 
-
-.shire-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+.shire-body {
+  max-width: 600px;
 }
 
-.shire-graph-wrapper{
+.shire-graph-wrapper {
   width: 336px;
   height: 336px;
 }
 
-.shire-span{
-  color: #FFC164;
-  font-family: 'Open Sans', sans-serif;
+.shire-span {
+  color: #ffc164;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 32px;
   font-size: 24px;
 }
 
-.shire-info{
-  color: #FFC164;
+.shire-info {
+  color: #ffc164;
   width: 336px;
   margin: 8px;
   font-size: 24px;
@@ -310,7 +324,7 @@ width: 280px;
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -476,7 +490,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -486,7 +501,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
